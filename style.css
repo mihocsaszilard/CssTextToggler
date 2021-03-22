@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu';
+    text-align: center;
+}
+
+p{
+    margin: 0;
+}
+
+#container{
+    color: #999;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: bold;
+    padding-top: 20px;
+    width: 100%;
+}
+
+#text-wrapper{
+    height: 50px;
+    overflow: hidden;
+}
+
+#rotating-text span {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.css-text{
+    background-color: rgb(38, 77, 228);
+}
+
+.javascript-text{
+    background-color: rgb(240, 219, 79);
+}
+
+.html-text{
+    background-color: rgb(227, 76, 38);
+}
+
+#rotating-text{
+    display: block;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: translateY(-160px);
+    }
+    5%{
+        transform: translateY(-106px);
+    }
+    33%{
+        transform: translateY(-106px);
+    }
+    38%{
+        transform: translateY(-54px);
+    }
+    66%{
+        transform: translateY(-54px);
+    }
+    71%{
+        transform: translateY(0px);
+    }
+    99.9%{
+        transform: translateY(-0px);
+    }
+    100%{
+        transform: translateY(-106px);
+    }
+}
